@@ -1,0 +1,9 @@
+# Counting | Types
+
+## Vector
+
+An n-dimensional vector. 
+
+## Matrix
+
+## Complex
