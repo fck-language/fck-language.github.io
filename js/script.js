@@ -16,12 +16,6 @@ function init(isIndex) {
     }
 }
 
-function loadFooter() {
-    let body = document.getElementById("footer").innerHTML = `
-
-    `;
-}
-
 let allTriangles = [];
 let time = 0;
 let canvas = document.getElementById("back");
@@ -203,7 +197,7 @@ function flavourDetailLists(elem) {
         v[3].forEach(function (t) {
             inner += itemise(t);
         });
-        inner += `</div><h4>Functions</h4><div class="row">`;
+        inner += `</div><h4>Constants</h4><div class="row">`;
         v[4].forEach(function (t) {
             inner += itemise(t);
         });
