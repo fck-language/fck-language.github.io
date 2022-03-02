@@ -53,3 +53,7 @@ li>a {
 canvas {
     z-index: 0;
 }
+
+.main-row {
+    width: 100%;
+}
