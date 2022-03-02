@@ -132,10 +132,6 @@ function triangles() {
         triangle.draw(ctx);
         allTriangles.push(triangle);
     }
-
-    // Main body triangles
-
-
 }
 
 function updateAllTris() {
@@ -174,13 +170,13 @@ function flavourList(elem) {
     ];
     let contents = `<p>We currently have ` + flavours.length + ` flavours. If you want to doenload or have a deeper look at any of the flavours, click on the name:</p><ul>`;
     for (let i = 0; i < flavours.length; i++) {
-        contents += `<li><a href="flavours.html#"` + flavours[i][0].toLowerCase() + `><b>` + flavours[i][0] + `</b></a><br>` + flavours[i][1] + `</li>`;
+        contents += `<li><a href="flavours.html#` + flavours[i][0].toLowerCase() + `"><b>` + flavours[i][0] + `</b></a><br>` + flavours[i][1] + `</li>`;
     }
     elem.innerHTML = contents + `</ul>`;
 }
 
 /**
- *
+ * Fills in all the lists of features for the different flavour
  * @param {HTMLDivElement} elem
  */
 function flavourDetailLists(elem) {
