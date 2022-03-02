@@ -1,2 +1,2 @@
 # fck-language.github.io
-fck website, documentation, and tutorials
+fck website, documentation, and tutorials. nothing much else really
