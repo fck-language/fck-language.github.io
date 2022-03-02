@@ -35,7 +35,15 @@ footer {
 }
 
 .align-right {
-    float: right;
+    direction: rtl;
+    text-align: right;
+    list-style: none;
+    padding-right: 0;
+}
+
+li>a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .copyright {
