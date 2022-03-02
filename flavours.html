@@ -1,258 +1,121 @@
-<!--
-
-=========================================================
-* Neumorphism UI - v1.0.0
-=========================================================
-
-* Product Page: https://themesberg.com/product/ui-kits/neumorphism-ui
-* Copyright 2020 Themesberg MIT LICENSE (https://www.themesberg.com/licensing#mit)
-
-* Coded by https://themesberg.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
--->
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
-    <!-- Primary Meta Tags -->
-    <title>fck | Flavours</title>
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <meta content="fck" name="title">
-    <meta content="fck-language" name="author">
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>About fck</title>
 
-    <!--  Social tags -->
-    <meta content="fck, fck-language, fck language, " name="keywords">
-    <meta content="fck. The world's first coding language that supports all human languages" name="description">
+    <!-- Bootstrap -->
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet"/>
 
-    <!-- Schema.org markup for Google+ -->
-    <meta content="Neumorphism UI by Themesberg" itemprop="name">
-    <meta content="Start developing neumorphic web applications and pages using Neumorphism UI. It features over 100 individual components and 5 example pages."
-          itemprop="description">
-    <meta content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/neumorphism-ui/neumorphism-thumbnail.jpg"
-          itemprop="image">
+    <!-- My shit -->
+    <link href="css/style.css" rel="stylesheet"/>
 
-    <!-- Favicon -->
-    <link href="html&css/assets/img/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="120x120">
-    <link href="html&css/assets/img/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-    <link href="html&css/assets/img/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-    <link href="html&css/assets/img/favicon/site.webmanifest" rel="manifest">
-    <link color="#ffffff" href="html&css/assets/img/favicon/safari-pinned-tab.svg" rel="mask-icon">
-    <meta content="#ffffff" name="msapplication-TileColor">
-    <meta content="#ffffff" name="theme-color">
-
-    <!-- Fontawesome -->
-    <link href="vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-
-    <!-- Pixel CSS -->
-    <link href="css/neumorphism.css" rel="stylesheet" type="text/css">
-
-    <!-- NOTICE: You can use the _analytics.html partial to include production code specific code & trackers -->
-
+    <!--  Favicon -->
+    <link href="assets/images/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="120x120">
+    <link href="assets/images/favicon/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="assets/images/favicon/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
 </head>
-
-<body>
-<header class="header-global">
-    <nav aria-label="Primary navigation"
-         class="navbar navbar-main navbar-expand-lg navbar-theme-primary headroom navbar-light navbar-transparent navbar-theme-primary"
-         id="navbar-main">
-        <div class="container position-relative">
-            <div class="navbar-collapse collapse" id="navbar_global">
-                <div class="navbar-collapse-header">
-                    <div class="row">
-                        <div class="col-6 collapse-brand">
-                            <a class="navbar-brand shadow-soft py-2 px-3 rounded border border-light"
-                               href="./index.html">
-                                <img alt="Themesberg logo" src="html&css/assets/img/brand/dark.svg">
-                            </a>
-                        </div>
-                        <div class="col-6 collapse-close">
-                            <a aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation"
-                               class="fas fa-times" data-target="#navbar_global" data-toggle="collapse"
-                               href="#navbar_global" title="close"></a>
-                        </div>
-                    </div>
-                </div>
-                <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+<body class="d-flex flex-column min-vh-100">
+<header>
+    <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand logo" href="index.html"><img alt="logo" id="navbar_image"
+                                                                src="assets/images/icons/fck%20logo.png"
+                                                                width="100"/></a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                    data-bs-toggle="collapse" id="navCollapseButton" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            <span class="nav-link-inner-text">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="download.html">
-                            <span class="nav-link-inner-text">Download</span>
-                            <span class="fas fa-angle-down nav-link-arrow ml-2"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="download.html">Download</a></li>
-                            <li><a class="dropdown-item" href="flavours.html">Flavours</a></li>
-                            <li><a class="dropdown-item" href="installing.html">Installing</a></li>
-                        </ul>
+                        <a aria-current="page" class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">
-                            <span class="nav-link-inner-text">Contact</span>
-                        </a>
+                        <a aria-current="page" class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link" href="download.html">Downloads</a>
                     </li>
                 </ul>
-            </div>
-            <div class="d-flex align-items-center">
-                <a class="nav-link" href="#">
-                    <span class="nav-link-inner-text">Tutorials</span>
-                </a>
-                <a class="nav-link" href="docs/build/index.html">
-                    <span class="nav-link-inner-text">Documentation</span>
-                </a>
+                <ul class="navbar-nav d-flex">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link" href="docs/build/html/index.html">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link" href="https://github.com/fck-language" target="_blank">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link" href="tutorials/index.html">Tutorials</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 </header>
-<main>
-    <section class="section container">
-        <h1>Flavours</h1>
-    </section>
-    <div class="section bg-primary pt-0 section-lg">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <p class="lead">fck has several <i>flavours</i>. A flavour is simply an installation of fck that has
-                        added functions, constants, and types. Each flavour is based upon the pure flavour; so anything
-                        in the pure version is in all the other flavours. All the syntax is exactly the same, so you
-                        never have to learn anything new!</p>
-                    <p>Since all of this is open source, you are more than welcome to go through all the different
-                        flavours and pick and choose what you want or don't want and build a custom flavour just for
-                        you. You can also download implementations of each function, constant, or type as a file to add
-                        into your project if you need it.</p>
-                    <p>Specific details about each constant, function, and type are given in the documentation. This
-                        page gives you more of an overview of the different flavours and what each one includes. Please
-                        also be careful with names of values. The names given here are not the names used in the code,
-                        but are instead names of the functions being implemented. For example the signature for the
-                        binomial coefficients function is <code style="color: #3e3f5b">binom_coeff(int n, int s) ->
-                            int</code>. For the code signature, please refer
-                        to the documentation.</p>
-                </div>
+
+<!--  Main body  -->
+<div>
+    <div class="row">
+        <div class="col-2">
+            <canvas id="main_canvas"></canvas>
+        </div>
+        <div class="col-8" id="fill">
+            <div class="row py-2">
+                <h1>Flavours</h1>
             </div>
-            <hr>
-            <!-- Counting -->
-            <div class="row container">
-                <div class="container">
-                    <h2>Counting</h2>
-                    <p>Counting is the maths based flavour, with an emphasis on pure maths. Statistical maths will be
-                        added in the future as a different flavour.</p>
-                    <h4>Constants</h4>
-                    <div class="row">
-                        <div class="col">
-                            <ul>
-                                <li>Phi or golden ratio</li>
-                                <li>Euler-Mascheroni constant</li>
-                                <li>Catalan's constant</li>
-                                <li>Wierstrass' constant</li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li>Gelfond's constant</li>
-                                <li>Sierpinsky's constant</li>
-                                <li>Gauss' constant</li>
-                                <li>Golden angle</li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li>Twin primes constant</li>
-                                <li>Plastic constant</li>
-                                <li>Magic angle</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h4>Functions</h4>
-                    <div class="row">
-                        <div class="col">
-                            <ul>
-                                <li>Gamma function</li>
-                                <li>Digamma function</li>
-                                <li>Polygamma function</li>
-                                <li>Reimann-Zeta function</li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li>Generalised harmonic series</li>
-                                <li>Binomial coefficients</li>
-                                <li>Polylogarithmic function</li>
-                                <li>Hyperbolic functions</li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li>Beta function</li>
-                                <li>Product function</li>
-                                <li>Chebyshev polynomials of the first kind</li>
-                                <li>Permutation signature</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <h4>Types</h4>
-                    <div class="row">
-                        <div class="col">
-                            <ul>
-                                <li>Vector</li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li>Matrix</li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <ul>
-                                <li>Complex</li>
-                            </ul>
-                        </div>
-                    </div>
+
+            <div class="py-3">
+                <div class="row py-2">
+                    <h2 id="pure">Pure</h2>
+                </div>
+                <div class="row">
+                    <p>
+                        The pure flavour of fck is the base flavour, and is what all the other flavours are built off
+                        of. It includes all the basics you need to get started with fck.
+                    </p>
                 </div>
             </div>
         </div>
+        <div class="col-2"></div>
     </div>
-</main>
+</div>
 
-<footer class="d-flex pb-5 pt-6 pt-md-7 border-top border-light bg-primary">
-    <div class="container">
+<footer class="mt-auto" id="footer">
+    <div class="px-lg-5 py-3">
+        <div class="row text-center">
+            <h6 class="lead">fck. for everyone</h6>
+        </div>
         <div class="row">
-            <div class="d-flex text-center justify-content-center align-items-center col" role="contentinfo">
-                <p class="font-weight-normal font-small mb-0">No copyright forever. No rights reserved. Do what you
-                    want! Open Source!</p>
+            <div class="col">
+                <ul class="align-right">
+                    <li class="py-1"><a href="index.html">Home</a></li>
+                    <li class="py-1"><a href="about.html">About</a></li>
+                    <li class="py-1"><a href="download.html">Downloads</a></li>
+                    <li class="py-1"><a href="flavours.html">Flavours</a></li>
+                </ul>
             </div>
+            <div class="col" style="float: left">
+                <ul class="list-unstyled">
+                    <li class="py-1"><a href="docs/build/html/index.html">Documentation</a></li>
+                    <li class="py-1"><a href="https://github.com/fck-language">GitHub</a></li>
+                    <li class="py-1"><a href="tutorials/index.html">Learn fck</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row text-center">
+            <p class="copyright">No copyright ever</p>
         </div>
     </div>
 </footer>
 
-<!-- Core -->
-<script src="vendor/jquery/dist/jquery.min.js"></script>
-<script src="vendor/popper.js/dist/umd/popper.min.js"></script>
-<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="vendor/headroom.js/dist/headroom.min.js"></script>
-
-<!-- Vendor JS -->
-<script src="vendor/onscreen/dist/on-screen.umd.min.js"></script>
-<script src="vendor/nouislider/distribute/nouislider.min.js"></script>
-<script src="vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<script src="vendor/waypoints/lib/jquery.waypoints.min.js"></script>
-<script src="vendor/jarallax/dist/jarallax.min.js"></script>
-<script src="vendor/jquery.counterup/jquery.counterup.min.js"></script>
-<script src="vendor/jquery-countdown/dist/jquery.countdown.min.js"></script>
-<script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-<script src="vendor/prismjs/prism.js"></script>
-
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-
-<!-- Neumorphism JS -->
-<script src="js/neumorphism.js"></script>
+<script src="js/script.js"></script>
+<script>init(false);
+flavourDetailLists(document.getElementById("fill"))</script>
 </body>
-
 </html>

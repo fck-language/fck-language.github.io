@@ -1,0 +1,36 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 13,
+    "sourceType": "module"
+  },
+  "rules": {
+    // Semicolon at end of line
+    "semi": ["error", "always"],
+    // No a == a
+    "no-self-compare": "error",
+    // No loops that can ever reach the second iteration
+    "no-unreachable-loop": "error",
+    // No labels that aren't needed
+    "no-extra-label": "error",
+    // No unused labels
+    "no-unused-labels": "error",
+    // Use === instead of == where it should be
+    "eqeqeq": ["error", "smart"],
+    // No duplicate imports
+    "no-duplicate-imports": "warn",
+    // Camelcase names and identifiers
+    "camelcase": "warn",
+    // Switch cases have default case last
+    "default-case-last": "warn",
+    // Allow empty functions
+    "no-empty": "off",
+    "no-unused-vars": "off",
+    // Turning this on makes visualise.js faile becuase of how D3 is imported
+    "no-undef": "off"
+  }
+}

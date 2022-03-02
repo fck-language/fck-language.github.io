@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>fck | A language for everyone</title>
+    <title>About fck</title>
 
     <!-- Bootstrap -->
     <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
@@ -21,7 +21,7 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
 <header>
-    <nav class="navbar fixed-top navbar-expand-lg" id="navbar">
+    <nav class="navbar sticky-top navbar-expand-lg" id="navbar">
         <div class="container-fluid">
             <a class="navbar-brand logo" href="index.html"><img alt="logo" id="navbar_image"
                                                                 src="assets/images/icons/fck%20logo.png"
@@ -59,20 +59,6 @@
     </nav>
 </header>
 
-<!--  Hero  -->
-<div class="min-vh-100" id="hero_div">
-    <div class="row align-items-center">
-        <div class="col-2 min-vh-100">
-            <canvas id="back"></canvas>
-        </div>
-        <div class="col text-center" style="z-index: 1;">
-            <h1>fck</h1><h2>for everyone</h2>
-        </div>
-        <div class="col-2">
-        </div>
-    </div>
-</div>
-
 <!--  Main body  -->
 <div>
     <div class="row">
@@ -80,21 +66,56 @@
             <canvas id="main_canvas"></canvas>
         </div>
         <div class="col-8">
-            <div class="row">
-                <h2>Why fck?</h2>
+            <div class="py-3">
+                <div class="row py-2">
+                    <h2>What is fck?</h2>
+                </div>
+                <div class="row">
+                    <p>
+                        fck is the first fully language-agnostic extensible coding language. What does all that mean?
+                    </p><p>
+                    <i>Language-agnostic</i> means you can write fck code in any spoken language you want to, whenever you want to.
+                </p><p>
+                    <i>Extensible</i> means you can add or remove languages whenever you want to, even adding in made up languages or just an alteration of an already existing language's syntax that you prefer.
+                </p><p>
+                    For those of you interested in having a look at the source code, fck is written in rust, and relies upon LLVM (specifically the rust bindings for LLVM from the <a href="https://crates.io/crates/llvm-sys"><code>llvm-sys</code></a> crate) and <a href="https://crates.io/crates/clap"><code>clap</code></a>. All parts (close enough) are handwritten. Due to the the specific nature of fck, this was almost a necessity.
+                </p>
+                </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <h4>Built-in localisation</h4>
-                    <p>With localisation built into fck from the ground up, your projects can be used by anyone from anywhere</p>
+
+            <div class="py-3">
+                <div class="row py-2">
+                    <h2>Is it really the first of its kind?</h2>
                 </div>
-                <div class="col">
-                    <h4>Flavours</h4>
-                    <p>One language, thousands of possibilities. Flavours allow you to use fck for specific tasks. From mathematical evaluation to linguistic analysis, fck flavours have you covered</p>
+                <div class="row">
+                    <p>
+                        This is a bit tricky to answer. Whilst there are languages that do include localisation and allow code to be written in different spoken languages, we do not believe that they are fully language-agnostic.
+                    </p>
                 </div>
-                <div class="col">
-                    <h4>Compiled and interpreted</h4>
-                    <p>With both an LLVM based compiler and interpreter, gone are the days of having to compile test scripts just to check a few commands</p>
+                <div class="row py-2">
+                    <h4>Why not?</h4>
+                </div>
+                <div class="row">
+                    <p>
+                        We believe that for a language to be truly language-agnostic, there should never be anything in the way of switching between spoken languages; it should be seamless. Additionally, we believe that a language-agnostic coding language should be built around (amongst other things) localisation.
+                    </p><p>
+                        Take Scratch (or Catrobot). Both are visual languages aimed at teenagers to introduce them to coding. Both include localised versions for multiple spoken languages, but no way to switch between languages whenever you want, and no way to access localisation information at all.
+                    </p><p>
+                        A language closer to being language-agnostic is Citrine. Citrine supports multiple languages, and has a fully functional translator to translate between code written in different spoken languages. But if you want to write code in a different language half-way through, you can't do that. Neither does it have localisation built-in. Having said that, Citrine is a wonderful sign that we're moving in the right direction with accessibility in coding.
+                    </p>
+                </div>
+            </div>
+
+            <div class="py-3">
+                <div class="row py-2">
+                    <h2>So what does fck have?</h2>
+                </div>
+                <div class="row">
+                    <p>
+                        fck is fully language-agnostic. That means you can switch between language whenever you want, copying snippets (and acknowledging them) regardless of language; modifying language files so the syntax is just how you like it; translating between languages for single files or entire projects; and with localisation built into fck with no exceptions.
+                    </p><p>
+                    fck has lots of other features such as different flavours, intuitive and simple package managers, and both interpreted and compiled runtime options to name a few. If you're interested, go have a look at the introduction to fck.
+                </p>
                 </div>
             </div>
         </div>
@@ -131,6 +152,6 @@
 </footer>
 
 <script src="js/script.js"></script>
-<script>init(true)</script>
+<script>init(false);</script>
 </body>
 </html>
